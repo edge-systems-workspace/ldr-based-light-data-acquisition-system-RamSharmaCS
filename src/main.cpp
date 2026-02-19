@@ -7,6 +7,19 @@
  * into a percentage (0–100%) to represent light intensity.
  * The values are displayed on the Serial Monitor.
  *
- * @author Bhartendu Ji
+ * @author Ram Sharma
  * @date 18 Feb 2026
+ */
+#include <Arduino.h>
+
+#define ldrpin A0   ///< LDR sensor connected to analog pin A0
+
+
+/**
+ * @brief Initializes serial communication and LDR pin.
+ *
+ * This function runs once when the Arduino starts.
+ * - Starts Serial communication at 9600 baud rate
+ * - Sets LDR pin as INPUT
+ * - Prints setup confirmation message
  */
